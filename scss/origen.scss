@@ -1,0 +1,66 @@
+//Este es un comentario de linea en SCSS
+/*Comentario en css puro*/
+
+//Import (archivos fragmentados para organizar. Colores, tipografia, estuctura, etc)
+//VARIABLES
+@import "partials/variables.scss";
+
+//ANIDAMIENTOS
+body {
+    height: $altoBody;
+    margin: $margenPrincipal;
+    font-family:$familiaFuente, sans-serif;
+    background-color:$colorFondo1; 
+    background-image: linear-gradient(to bottom, $colorFondo1, $colorFondo2, $colorFondo1); 
+    
+    section{
+        width: 100px;
+        text-align: center;
+        
+        span{
+            justify-self:center;
+            align-self:bottom;
+            color:$textoSpan1;
+            font-weight: $tipoFuente1;
+        }
+    }
+}
+
+aside{   
+    ul{
+        li{
+            padding: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color:seagreen
+            &:hover{
+                font-size: 150%;
+            }
+        }
+    }
+    a{
+        color:$colorLiPrincipal2; 
+        text-align: center;
+        text-decoration:none;
+        width: 80%;  
+        &:link{
+            color: $colorLiPrincipal;
+        }
+        &:visited{
+            color: $colorLiPrincipal2;
+        }
+    }
+}
+
+.modificarMenuLateral{
+
+    background-color: $colorFondo2;
+    text-align: center;
+    font-style: italic;
+
+    .tituloGrande{
+        font-size: 22px;
+        color: $textoSpan1;
+        text-orientation: sideways-right;
+    }
+}

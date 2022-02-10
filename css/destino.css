@@ -1,0 +1,52 @@
+/*Comentario en css puro*/
+body {
+  height: 100vh;
+  margin: 5px;
+  font-family: "Arvo", sans-serif;
+  background-color: goldenrod;
+  background-image: linear-gradient(to bottom, goldenrod, khaki, goldenrod);
+}
+body section {
+  width: 100px;
+  text-align: center;
+}
+body section span {
+  justify-self: center;
+  align-self: bottom;
+  color: red;
+  font-weight: bold;
+}
+
+aside ul li {
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+color:seagreen aside ul li:hover {
+  font-size: 150%;
+}
+aside a {
+  color: darkslateblue;
+  text-align: center;
+  text-decoration: none;
+  width: 80%;
+}
+aside a:link {
+  color: seagreen;
+}
+aside a:visited {
+  color: darkslateblue;
+}
+
+.modificarMenuLateral {
+  background-color: khaki;
+  text-align: center;
+  font-style: italic;
+}
+.modificarMenuLateral .tituloGrande {
+  font-size: 22px;
+  color: red;
+  text-orientation: sideways-right;
+}
+
+/*# sourceMappingURL=destino.css.map */
