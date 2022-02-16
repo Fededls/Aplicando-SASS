@@ -1,66 +1,105 @@
-//Este es un comentario de linea en SCSS
-/*Comentario en css puro*/
-
 //Import (archivos fragmentados para organizar. Colores, tipografia, estuctura, etc)
 //VARIABLES
 @import "partials/variables.scss";
 
+@font-face {
+    font-family:$familiaFuente;
+    src: url($urlFuente);
+}
 //ANIDAMIENTOS
 body {
-    height: $altoBody;
     margin: $margenPrincipal;
+    border: solid $anchoBorde1 $borde;
     font-family:$familiaFuente, sans-serif;
-    background-color:$colorFondo1; 
-    background-image: linear-gradient(to bottom, $colorFondo1, $colorFondo2, $colorFondo1); 
-    
-    section{
-        width: 100px;
-        text-align: center;
-        
-        span{
-            justify-self:center;
-            align-self:bottom;
-            color:$textoSpan1;
-            font-weight: $tipoFuente1;
-        }
-    }
 }
-
-aside{   
+nav{
+    background-color: $colorFondo1;
     ul{
         li{
-            padding: 8px;
-            font-size: 20px;
-            font-weight: bold;
-            color:seagreen
+            background-color:$colorFondo1;
+            display: inline-block;
+            padding: $margenPrincipal;
+            text-decoration: none;
             &:hover{
-                font-size: 150%;
+                background-color:$colorLiPrincipal2;
             }
         }
+    } 
+}
+aside{
+    background-color:$colorFondo2;
+    float: left;
+    height: 100%;
+    width: 200px;
+    ol{
+        list-style-type:decimal-leading-zero;
     }
-    a{
-        color:$colorLiPrincipal2; 
-        text-align: center;
-        text-decoration:none;
-        width: 80%;  
-        &:link{
-            color: $colorLiPrincipal;
+    ol li{
+        color:$colorLiPrincipal2;
+        padding: $margenPrincipal;
+        &:hover{
+            font-size: 150%;
+            color: $borde3;
         }
-        &:visited{
-            color: $colorLiPrincipal2;
+    }
+    h2{
+        color:$colorLiPrincipal2; 
+        text-align: $alineacion1;
+    }
+}
+main{
+    section{
+        h2{
+            color:$borde2;
+        }
+        h3{
+            &:hover{
+            background-color:$borde3;
+            }
+        }
+        img{
+            margin: 30px 20px 5px 20px;
         }
     }
 }
-
-.modificarMenuLateral{
-
-    background-color: $colorFondo2;
-    text-align: center;
-    font-style: italic;
-
+#header{
+    background-color: $colorLiPrincipal2;
+    text-align: $alineacion1;
     .tituloGrande{
-        font-size: 22px;
-        color: $textoSpan1;
+        font-size: 35px;
+        color: $borde3;
         text-orientation: sideways-right;
+    }
+}
+#main{
+    background-color:$colorFondo2;
+    height: $alto1;
+    .menuLateral{
+        font-weight:$tipoFuente1;
+        background-image: url("../images/fondo.jpg");
+        background-repeat: repeat;
+        background-position: $alineacion1;
+    }
+    .menuPrincipal{
+        font-weight:$tipoFuente1;
+        font-style: italic;
+    }
+    .bordes{
+        border-left: solid $anchoBorde1 $borde1;
+        border-top: solid $anchoBorde1 $borde1;
+        border-right: solid $anchoBorde2 $borde2;
+        border-bottom: solid $anchoBorde2 $borde2;
+    }
+    .sinSubrayado{
+        text-decoration: none;
+    }
+}
+#footer{
+    background-color:$colorFondo1;
+    text-align: $alineacion1;
+    font-size: 100%;
+    font-weight:$tipoFuente1;
+    .centrarVertical{
+        vertical-align:middle;
     }
 }

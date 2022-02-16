@@ -1,52 +1,100 @@
-/*Comentario en css puro*/
+@font-face {
+  font-family: "Arvo";
+  src: url("../fonts/Arvo/Arvo-Regular.ttf");
+}
 body {
-  height: 100vh;
-  margin: 5px;
+  margin: 10px;
+  border: solid 5px gray;
   font-family: "Arvo", sans-serif;
-  background-color: goldenrod;
-  background-image: linear-gradient(to bottom, goldenrod, khaki, goldenrod);
-}
-body section {
-  width: 100px;
-  text-align: center;
-}
-body section span {
-  justify-self: center;
-  align-self: bottom;
-  color: red;
-  font-weight: bold;
 }
 
-aside ul li {
-  padding: 8px;
-  font-size: 20px;
-  font-weight: bold;
+nav {
+  background-color: coral;
 }
-color:seagreen aside ul li:hover {
-  font-size: 150%;
-}
-aside a {
-  color: darkslateblue;
-  text-align: center;
+nav ul li {
+  background-color: coral;
+  display: inline-block;
+  padding: 10px;
   text-decoration: none;
-  width: 80%;
 }
-aside a:link {
-  color: seagreen;
-}
-aside a:visited {
-  color: darkslateblue;
+nav ul li:hover {
+  background-color: darkslateblue;
 }
 
-.modificarMenuLateral {
-  background-color: khaki;
-  text-align: center;
-  font-style: italic;
+aside {
+  background-color: greenyellow;
+  float: left;
+  height: 100%;
+  width: 200px;
 }
-.modificarMenuLateral .tituloGrande {
-  font-size: 22px;
+aside ol {
+  list-style-type: decimal-leading-zero;
+}
+aside ol li {
+  color: darkslateblue;
+  padding: 10px;
+}
+aside ol li:hover {
+  font-size: 150%;
+  color: red;
+}
+aside h2 {
+  color: darkslateblue;
+  text-align: center;
+}
+
+main section h2 {
+  color: orangered;
+}
+main section h3:hover {
+  background-color: red;
+}
+main section img {
+  margin: 30px 20px 5px 20px;
+}
+
+#header {
+  background-color: darkslateblue;
+  text-align: center;
+}
+#header .tituloGrande {
+  font-size: 35px;
   color: red;
   text-orientation: sideways-right;
+}
+
+#main {
+  background-color: greenyellow;
+  height: 800px;
+}
+#main .menuLateral {
+  font-weight: bold;
+  background-image: url("../images/fondo.jpg");
+  background-repeat: repeat;
+  background-position: center;
+}
+#main .menuPrincipal {
+  font-weight: bold;
+  font-style: italic;
+}
+#main .bordes {
+  border-left: solid 5px peru;
+  border-top: solid 5px peru;
+  border-right: solid 10px orangered;
+  border-bottom: solid 10px orangered;
+}
+#main .sinSubrayado {
+  text-decoration: none;
+}
+
+#footer {
+  background-color: coral;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+}
+#footer .centrarVertical {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=destino.css.map */

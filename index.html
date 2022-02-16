@@ -2,13 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Aplicando SASS</title>
-    <!--Incluyendo CSS externo-->
+    <title>Electro-Shop</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="./css/destino.css"/>
 </head>
 <body>
-    
+   
+    <header id="header">
+        <h1 class="tituloGrande">Electro-Shop</h1>
+    </header>
+    <hr>
+
+    <nav class="menuPrincipal">
+        <ul>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Nuestra Empresa</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <aside class="menuLateral">
+            <h2>Categorias</h2>
+            <ol>
+                <li>Audio</li>
+                <li>Video</li>
+                <li>Cocina</li>
+                <li>Baño</li>
+                <li>Juegos</li>
+                <li>Varios</li>
+            </ol>
+        </aside>
+        <section>   
+            <h2>Ofertas Mensuales</h2>
+            <a class="sinSubrayado" href="">
+            <img class="bordes" src="images/oferta1.jpg" alt="Oferta1" height="220px">
+            <h3>Tv Smart 32 - $7900</h3>
+            </a> 
+        </section>
+    </main>
+
+    <hr>
+    <footer id="footer">
+        <p class="centrarVertical">©Copyright 2022 Fdls. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
